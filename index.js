@@ -91,8 +91,8 @@ registerRoutes(fastify, {
 const start = async () => {
     try {
         // 启动 Fastify 服务
-        // await fastify.listen({port: PORT, host: '0.0.0.0'});
-        await fastify.listen({port: PORT, host: '::'});
+        await fastify.listen({port: PORT, host: '0.0.0.0'});
+        // await fastify.listen({port: PORT, host: '::'});
 
         // 获取本地和局域网地址
         const localAddress = `http://localhost:${PORT}`;
